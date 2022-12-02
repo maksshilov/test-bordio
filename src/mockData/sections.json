@@ -1,0 +1,19 @@
+[
+    {
+        "label": "Favorites",
+        "items": [
+            "Marketing",
+            "Mobile App"
+        ]
+    },
+    {
+        "label": "My Projects",
+        "items": [
+            "Marketing",
+            "Landing Pages",
+            "Wedding",
+            "Mobile App",
+            "House Constructions"
+        ]
+    }
+]
