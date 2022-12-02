@@ -118,4 +118,58 @@ export const HeaderContainer = styled.div<IProps>`
       }
     }
   }
+
+  & .other-tools-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & .notifications-container {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      position: relative;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      transition: all 0.3s ease;
+
+      & img {
+        width: 21px;
+        height: 21px;
+      }
+
+      & .counter-container {
+        position: absolute;
+        left: 50%;
+        top: -15%;
+        border-radius: 4px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 20px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid #fff;
+        background-color: ${COLORS.HEADER_NOTIFICATION_COUNTER_BG};
+
+        & span.counter {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 8px;
+          line-height: 8px;
+          color: ${COLORS.HEADER_NOTIFICATION_COUNTER_FONT};
+        }
+      }
+    }
+  }
 `;

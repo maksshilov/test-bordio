@@ -3,6 +3,8 @@ import { Section } from "./modules/Section";
 import { SideBarContainer } from "./style";
 import sections from "../../mockData/sections.json";
 import { Logo } from "../Logo";
+import { SearchBar } from "../SearchBar";
+import { Avatar } from "../Avatar";
 
 interface ISideBarProps {}
 
@@ -13,17 +15,10 @@ export const SideBar: FC<ISideBarProps> = () => {
     <SideBarContainer>
       <Logo />
 
-      <div className="search-container">
-        <div className="search-wrapper">
-          <input type="text" name="search" id="search" placeholder="Search..." />
-          <img src="/img/Search.png" alt="" />
-        </div>
-      </div>
+      <SearchBar />
 
       <div className="workspace-container">
-        <div className="avatar-container">
-          <img src="/img/ava.png" alt="avatar" />
-        </div>
+        <Avatar />
         <p className="label">My workspace</p>
       </div>
 
