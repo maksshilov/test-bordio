@@ -11,11 +11,11 @@ export const ColumnContainer = styled.div<IColumnContainerProps>`
   min-width: 300px;
   height: 100%;
 
-  &:last-of-type {
+  &:last-child {
     border-right: 2px solid ${COLORS.COLUMN_BORDER};
   }
 
-  & .label-container {
+  & > .label-container {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -50,7 +50,14 @@ export const Content: FC<IContentProps> = () => {
   return (
     <ContentContainer width={contentWidth}>
       <Header />
-      <div className="content-container">{content}</div>
+      <div className="content-container">
+        {content}
+        <div className="create-status">
+          <div className="label-container">
+            <div className="label">+ Create status</div>
+          </div>
+        </div>
+      </div>
     </ContentContainer>
   );
 };
