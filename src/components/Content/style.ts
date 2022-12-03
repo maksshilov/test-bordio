@@ -21,6 +21,15 @@ export const ContentContainer = styled.div<IContentContainerProps>`
     align-items: flex-start;
     justify-content: flex-start;
 
+    & .lottie-loader {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+
     & .create-status {
       display: flex;
       min-width: 300px;

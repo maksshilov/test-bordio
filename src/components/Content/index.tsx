@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import Lottie from "lottie-react";
 import React, { FC, useEffect, useState } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
@@ -26,8 +27,10 @@ export const Content: FC<IContentProps> = () => {
     const getCardsResponse = await getCards();
     const getCardsResponseJson: ICard[] = await getCardsResponse.json();
     if (getCardsResponse) {
-      dispatch({ type: ActionTypes.SET_DATA, data: getCardsResponseJson });
-      setIsLoading(() => false);
+      setTimeout(() => {
+        dispatch({ type: ActionTypes.SET_DATA, data: getCardsResponseJson });
+        setIsLoading(() => false);
+      }, 2000);
     } else {
       setIsLoading(() => false);
     }
@@ -37,7 +40,24 @@ export const Content: FC<IContentProps> = () => {
     handleGetCards();
   }, []);
 
-  const content = isLoading ? <div>Loading...</div> : data ? STATUSES.map((status) => <Column label={status} key={status} />) : <div>Error</div>;
+  const content = isLoading ? (
+    <div className="lottie-loader">
+      <Lottie animationData={require("../../lottie/bordio-logo.json")} autoPlay style={{ width: "10vw" }} />
+    </div>
+  ) : data ? (
+    <>
+      {STATUSES.map((status) => (
+        <Column label={status} key={status} />
+      ))}
+      <div className="create-status">
+        <div className="label-container">
+          <div className="label">+ Create status</div>
+        </div>
+      </div>
+    </>
+  ) : (
+    <div>Error</div>
+  );
 
   const { width } = useWindowDimensions();
 
@@ -48,14 +68,7 @@ export const Content: FC<IContentProps> = () => {
   return (
     <ContentContainer width={contentWidth}>
       <Header />
-      <div className="content-container">
-        {content}
-        <div className="create-status">
-          <div className="label-container">
-            <div className="label">+ Create status</div>
-          </div>
-        </div>
-      </div>
+      <div className="content-container">{content}</div>
     </ContentContainer>
   );
 };
