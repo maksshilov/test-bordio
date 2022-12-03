@@ -14,7 +14,7 @@ export const DropDown: FC<IDropDownProps> = ({ items }) => {
   const itemsMapped = items.map((item, idx) => {
     const handleSetActiveItemIdx = () => setActiveItemIdx(() => idx);
     return (
-      <div className="drop-down-item" onClick={handleSetActiveItemIdx}>
+      <div className="drop-down-item" onClick={handleSetActiveItemIdx} key={idx}>
         {item}
       </div>
     );

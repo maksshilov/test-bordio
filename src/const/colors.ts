@@ -23,3 +23,13 @@ export const HEADER_NOTIFICATION_COUNTER_BG = "#F21247";
 export const HEADER_NOTIFICATION_COUNTER_FONT = "#fff";
 export const HEADER_SEARCHBAR_BG = "#F5F8FA";
 export const HEADER_SEARCHBAR_FONT = "#000";
+
+export const COLUMN_BORDER = "#F3F3F3";
+export const COLUMN_LABEL_FONT = "#222222";
+export const COLUMN_COUNTER_BG = "#E8EBEF";
+export const COLUMN_COUNTER_FONT = "#8C939F";
+
+export const CARD_DESCRIPTION_FONT = "#222";
+export const CARD_DURATION_FONT = "#435E52";
+export const CARD_COMPLETED_BG = "#F0F0F0";
+export const CARD_COMPLETED_FONT = "#A5A5A5";

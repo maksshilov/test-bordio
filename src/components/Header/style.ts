@@ -14,6 +14,7 @@ export const HeaderContainer = styled.div<IProps>`
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  border-bottom: 2px solid ${COLORS.COLUMN_BORDER};
 
   & .btns-container {
     display: flex;
@@ -43,7 +44,7 @@ export const HeaderContainer = styled.div<IProps>`
       }
 
       &:hover {
-        /* filter: contrast(10px); */
+        /* opacity: 0.75; */
       }
 
       transition: all 0.3s ease;
@@ -80,6 +81,7 @@ export const HeaderContainer = styled.div<IProps>`
           border-radius: 4px;
           opacity: 0;
           visibility: hidden;
+          filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.15));
 
           &.active {
             opacity: 1;

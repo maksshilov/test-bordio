@@ -14,7 +14,11 @@ export const Section: FC<ISectionProps> = ({ label, items }) => {
 
   const handleSetIsUnfold = () => setIsUnfold((state) => !state);
 
-  const itemsMapped = items.map((item) => <p className="section-item">{item}</p>);
+  const itemsMapped = items.map((item, idx) => (
+    <p className="section-item" key={idx}>
+      {item}
+    </p>
+  ));
 
   return (
     <SectionContainer isUnfold={isUnfold} itemsContainerHeight={itemsContainerHeight}>

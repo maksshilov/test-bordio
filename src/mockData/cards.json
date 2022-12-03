@@ -1,0 +1,49 @@
+[
+    {
+        "label": "New task",
+        "cards": [
+            {
+                "description": "Check email",
+                "duration": "0:20h",
+                "color": "#ABE9CE",
+                "status": "newTask"
+            },
+            {
+                "description": "Compare PPC agencies and make a report for Steven",
+                "duration": "3:00h",
+                "color": "#D8DCFF",
+                "status": "newTask"
+            },
+            {
+                "description": "Meeting with Amanda (PR department)",
+                "duration": "0:30h",
+                "color": "#ABE9CE",
+                "status": "newTask"
+            },
+            {
+                "description": "Get Patrick's approval for homepage new design",
+                "duration": "0:20h",
+                "color": "#D8DCFF",
+                "status": "newTask"
+            },
+            {
+                "description": "Write a blogpost '7 best strategies for SEO in 2020'",
+                "duration": "5:00h",
+                "color": "#FEC6B7",
+                "status": "newTask"
+            }
+        ]
+    },
+    {
+        "label": "Scheduled",
+        "cards": []
+    },
+    {
+        "label": "In progress",
+        "cards": []
+    },
+    {
+        "label": "Completed",
+        "cards": []
+    }
+]
