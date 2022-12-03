@@ -26,10 +26,8 @@ export const Content: FC<IContentProps> = () => {
     const getCardsResponse = await getCards();
     const getCardsResponseJson: ICard[] = await getCardsResponse.json();
     if (getCardsResponse) {
-      setTimeout(() => {
-        dispatch({ type: ActionTypes.SET_DATA, data: getCardsResponseJson });
-        setIsLoading(() => false);
-      }, 100);
+      dispatch({ type: ActionTypes.SET_DATA, data: getCardsResponseJson });
+      setIsLoading(() => false);
     } else {
       setIsLoading(() => false);
     }
