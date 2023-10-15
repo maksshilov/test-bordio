@@ -27,4 +27,7 @@ export const AppContainer = styled.div<IProps>`
     height: 100%;
     background-color: black;
   }
+
+  & .header {
+  }
 `;

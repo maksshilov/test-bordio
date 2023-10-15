@@ -46,7 +46,7 @@ export const ToolsContainer = styled.div<IToolsContainerProps>`
 
       & p.label {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: "NeueMachina-Bold";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;

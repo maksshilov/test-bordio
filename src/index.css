@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'NeueMachina-Regular';
+  src: local('NeueMachina-Regular'), url(./fonts/NeueMachina-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NeueMachina-Bold';
+  src: local('NeueMachina-Bold'), url(./fonts/NeueMachina-Bold.woff) format('woff');
+}
