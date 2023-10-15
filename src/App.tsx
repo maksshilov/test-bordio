@@ -29,7 +29,7 @@ function App() {
           </div>
           <div className="block-1">
             <div className="item-active">
-              <img src="/img/plaza/cinema.jpg" />
+              <img src="/img/plaza/cinema.png" />
             </div>
             <div className="item-not-active">
               <img src="/img/plaza/logo-bowl.png" />
